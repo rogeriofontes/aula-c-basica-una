@@ -272,6 +272,7 @@ int main() {
 ### Siga o tutorial: https://terminalroot.com.br/2022/12/como-instalar-gcc-gpp-mingw-no-windows.html
 
 ### Extensões:
+
 --
 C/C++
 v1.21.6
