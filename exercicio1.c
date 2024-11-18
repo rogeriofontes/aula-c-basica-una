@@ -1,7 +1,16 @@
-#include <stdio.h> // Biblioteca padrão de entrada e saída
+#include <stdio.h>
 
 int main()
 {
-    printf("Olá, Mundo!\n");
-    return 0; // Retorna 0 para indicar que o programa terminou corretamente
+    int numero;
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+    if (numero % 2 ==0)
+    {
+        printf("%d é par/n", numero);
+    }else{
+        printf("%d é impar/n", numero);
+    }
+    
+    return 0;
 }
