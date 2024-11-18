@@ -1,14 +1,31 @@
 #include <stdio.h>
 
-int soma(int a, int b) {
-    return a + b;
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
 }
 
-int main()
-{
+int main() {
+    int arr[10];
+    printf("Digite 10 números:\n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+    }
 
-    int resultado = soma(5, 3);
-    printf("Resultado da soma: %d\n", resultado);
+    bubbleSort(arr, 10);
+
+    printf("Array em ordem crescente: ");
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
 
     return 0;
 }
